@@ -40,10 +40,14 @@ const items = [
   },
 ];
 
-const clerk = useClerk();
-const { isSignedIn } = useAuth();
+
 
 const PersonalSection = () => {
+
+  const clerk = useClerk();
+  const { isSignedIn } = useAuth();
+
+
   return (
     <SidebarGroup>
       <SidebarGroupLabel>You</SidebarGroupLabel>
